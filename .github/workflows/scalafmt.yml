@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          git remote set-branches main "${{github.head_ref}}"
+          git remote set-branches origin main "${{github.head_ref}}"
           git fetch --depth 1
           git checkout "${{github.head_ref}}"
 
