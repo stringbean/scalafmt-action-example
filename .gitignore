@@ -1,0 +1,14 @@
+target
+.bsp
+
+# ignore vim swap files
+*~
+*.swp
+*.swo
+
+# intellij
+.idea
+*.iml
+*.sc
+
+.DS_Store
