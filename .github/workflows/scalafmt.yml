@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
+
+      - name: Checkout branches
+        run: |
           git remote set-branches origin main "${{github.head_ref}}"
           git fetch --depth 1
           git checkout "${{github.head_ref}}"
