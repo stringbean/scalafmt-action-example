@@ -18,7 +18,7 @@ jobs:
           git fetch --depth 1
           git checkout "${{github.head_ref}}"
 
-      - uses: stringbean/scalafmt-action@v1
+      - uses: stringbean/scalafmt-action@v1.1.0-alpha
         with:
           compare-branch: main
           version: 2.7.5
