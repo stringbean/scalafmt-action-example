@@ -11,6 +11,6 @@ class ScalafmtExampleSpec extends AnyFlatSpec with Matchers {
   }
 
   it should "also greet fred" in {
-    scalafmtExample.greet("fred") shouldBe      "hello, fred"
+    scalafmtExample.greet("fred") shouldBe    "hello, fred"
   }
 }
