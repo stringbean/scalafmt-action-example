@@ -11,10 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
-      - uses: stringbean/scalafmt-action@v1
+      - name: Checkout branches
+        run: |
+          git remote set-branches origin main "${{github.head_ref}}"
+          git fetch --depth 1
+          git checkout "${{github.head_ref}}"
+
+      - uses: stringbean/scalafmt-action@v2
         with:
           compare-branch: main
           version: 2.7.5
