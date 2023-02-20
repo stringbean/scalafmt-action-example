@@ -18,6 +18,6 @@ jobs:
           git fetch --depth 1
           git checkout "${{github.head_ref}}"
 
-      - uses: stringbean/scalafmt-action@v2
+      - uses: stringbean/scalafmt-action@v2-dev
         with:
           compare-branch: main
