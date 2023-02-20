@@ -21,4 +21,3 @@ jobs:
       - uses: stringbean/scalafmt-action@v2
         with:
           compare-branch: main
-          version: 2.7.5
