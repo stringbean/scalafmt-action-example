@@ -20,4 +20,4 @@ jobs:
 
       - uses: stringbean/scalafmt-action@v2-dev
         with:
-          compare-branch: main
+          compare-branch: origin/main
